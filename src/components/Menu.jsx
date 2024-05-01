@@ -15,11 +15,6 @@ const Menu = () => {
       <div className="flex flex-wrap gap-8 justify-center">
         <DishesCard img={menu1} title="Chicken Wings" price="$16.99" />
         <DishesCard img={menu2} title="Chinese Rice" price="$15.99" />
-        <DishesCard
-          img={menu3}
-          title="Chicken with Cauliflower"
-          price="$14.99"
-        />
       </div>
     </section>
   );

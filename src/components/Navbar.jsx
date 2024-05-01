@@ -23,10 +23,10 @@ const Navbar = () => {
   useEffect(() => {
     if (theme === "dark") {
       document.querySelector("html").classList.add("dark");
-      setIcon(<FaMoon size={23} className="text-white" />);
+      setIcon(<FaMoon size={20} className="text-white" />);
     } else {
       document.querySelector("html").classList.remove("dark");
-      setIcon(<MdSunny size={28} />);
+      setIcon(<MdSunny size={25} />);
     }
   }, [theme]);
 
@@ -37,15 +37,14 @@ const Navbar = () => {
   return (
     <header className="fixed w-full z-10">
       <div>
-        <div className="flex flex-row justify-between p-5 md:px-32  bg-white shadow dark:bg-neutral-900 dark:text-white">
+        <div className="flex flex-row items-center justify-between p-5 md:px-30 bg-white shadow dark:bg-neutral-900 dark:text-white">
           <div className="flex flex-row items-center cursor-pointer">
             <span>
               <BiRestaurant size={32} />
             </span>
-            <h1 className="text-xl font-semibold">Let's Foodie</h1>
+            <h1 className="text-xl font-semibold">Foodie</h1>
           </div>
-
-          <nav className="hidden md:flex flex-row items-center text-lg font-medium gap-8">
+          <nav className="hidden md:flex items-center justify-center text-lg font-medium gap-4 md:mr-9">
             <Link
               to="home"
               spy={true}
@@ -183,7 +182,7 @@ const Navbar = () => {
           <Button title="Login" />
         </div>
         <button
-          className="absolute right-12 md:size-9 md:right-5 top-6 bg-transparent "
+          className="absolute px-2 top-6 right-12 md:size-9 md:right-5  bg-transparent "
           onClick={handleChangeTheme}
         >
           {icon}

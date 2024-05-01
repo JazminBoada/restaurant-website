@@ -10,8 +10,6 @@ const About = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
           itaque, aperiam quis sint alias harum odio, vero aspernatur inventore
           voluptas consectetur iusto nihil repellendus facilis repellat autem.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Exercitationem alias sequi vitae repellat est voluptas, magnam quidem!
         </p>
         <p className="text-lg hidden lg:block font-semibold">
           Fugiat iure quasi. Lorem ipsum dolor sit amet consectetur adipisicing
